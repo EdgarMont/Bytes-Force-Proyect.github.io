@@ -1,3 +1,31 @@
 .advantages{
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 100px;
+
+    &__list {
+        width: 288px;
+    }
+    &__icon {
+        height: 50px;
+        width: 50px;
+    }
+    &__title { 
+        color: #D41443;
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 66px;
+        letter-spacing: 0.04em;
+    }
+    &__text {
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+    }
+    
 }
