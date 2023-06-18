@@ -6,7 +6,7 @@
 //@include flex-center;
 
 @mixin screen-480 {
-    @media screen and (max-width: 767px) and (min-width: 480px) {
+    @media screen and (max-width: 767px) and (min-width: 320px) {
         @content;
     }
 }
