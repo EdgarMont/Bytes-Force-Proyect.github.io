@@ -1,0 +1,151 @@
+.header{
+    background-color: $color1;
+    
+    
+    &_nav{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 66%;
+        height: 124px;
+        
+
+        &_site{
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            color: $color3;
+            padding: 0px 17px;
+        }
+    }
+
+}
+.IceCream{
+    font-family: 'Titan One', cursive;
+    font-size: 25px;
+    color: $color2;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    
+    &_icon{
+        width: 50px;
+        height: 48px;
+        margin-right: 20px;
+        fill: $color2;
+    }
+}
+
+.buttonModalBuy {
+    background-color: $color3;
+    color: $color2;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 159px;
+    height: 44px;
+    border-radius: 22px;
+    margin: 40px 15px;
+    z-index: 2;
+
+    &_icon{
+        width: 6px;
+        height: 10px;
+        fill: $color4;
+        margin-left: 12px;
+      }
+  }
+  .buttonModalBuy:hover {
+    background-color: #fd2465;
+    color: #ffffff;
+    cursor: pointer;
+    
+  }
+  .navBlock{
+    position: absolute;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 42px 15px;
+  }
+  .menuNavIcon{
+    fill: $color2;
+  }
+  
+  .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+  @media (max-width: 1001px){
+    .header_nav{
+      display: none;
+    }
+  }
+  @media (min-width: 1002px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-navBlock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #E17992;
+    z-index: 9;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-navBlock.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-navBlock .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+    
+  }
+  
+  .mobileMenu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  
+    &_link {
+      display: block;
+      padding: 10px;
+      color: $color3;
+      font-size: 40px;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid #ececec;
+    }
+    &_link:hover{
+      color: $color2;
+    }
+  }
+  

@@ -14,16 +14,14 @@
     <link rel="stylesheet" href="../css/styles.min.css" />
     <title>IceCream</title>
   </head>
-  <header>
+  <header class="header">
     <section class="hero container">
-      <svg > 
-        <use
-          href="../images/sprite.svg#logo"
-          width="50"
-          heigth="48"
-        ></use>
-      </svg>
-      <a href="#" class="IceCream">IceCream</a>
+      <a class="IceCream" href="#">
+        <svg class="IceCream_icon">
+          <use href="../images/sprite.svg#logo"></use></svg
+        >ICECREAM
+      </a>
+
       <div class="navBlock">
         <button
           class="menu-toggle js-open-menu"
@@ -45,26 +43,21 @@
           </svg>
         </button>
       </div>
-      <nav class="hero_nav">
-        <h3>
-          <a class="hero_nav_site" href="#">Home</a>
-        </h3>
-        <h3>
-          <a class="hero_nav_site" href="#">About us</a>
-        </h3>
-        <h3>
-          <a class="hero_nav_site" href="#">How It's made?</a>
-        </h3>
-        <h3>
-          <a class="hero_nav_site" href="#">Our products</a>
-        </h3>
-        <h3>
-          <a class="hero_nav_site" href="#">Contact</a>
-        </h3>
+      <nav class="header_nav">
+          <a class="header_nav_site" href="#">Home</a>
+
+          <a class="header_nav_site" href="#">About us</a>
+        
+          <a class="header_nav_site" href="#">How It's made?</a>
+        
+          <a class="header_nav_site" href="#">Our products</a>
+        
+          <a class="header_nav_site" href="#">Contact</a>
       </nav>
-      <button class="buttonService" type="submit" data-modal-open> 
+
+      <button class="buttonModalBuy" type="submit" data-modal-open>
         Buy now
-        <svg class="iconSend">
+        <svg class="buttonModalBuy_icon">
           <use href="../images/sprite.svg#lineRigth"></use>
         </svg>
       </button>
@@ -79,17 +72,17 @@
             height="24"
           >
             <path
-              
               d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
               clip-rule="evenodd"
             ></path>
           </svg>
         </button>
-        <div class="mobileMenu2">
-          <button class="buttonService" type="submit" data-modal-open> 
-            Buy now
-          </button>
-        </div>
+        <button class="buttonModalBuy" type="submit" data-modal-open>
+          Buy now
+          <svg class="buttonModalBuy_icon">
+            <use href="../images/sprite.svg#lineRigth"></use>
+          </svg>
+        </button>
         <ul class="mobileMenu">
           <li><a href="#" class="mobileMenu_link">Home</a></li>
           <li><a href="#" class="mobileMenu_link">About us</a></li>
@@ -101,15 +94,12 @@
     </section>
     <section class="backdrop is-hidden" data-backdrop>
       <form action="" class="modalForm is-hidden" data-modal>
-        <div class="Formtext" >
-          <p 
-            class="titleForm"> 
-              Syper Pyper Ice Cream
-          </p>
+        <div class="Formtext">
+          <p class="titleForm">Syper Pyper Ice Cream</p>
         </div>
-        <div class="closebutton"> 
+        <div class="closebutton">
           <button class="buttonFormClose" type="button" data-modal-close>
-            <svg class="iconClose"> 
+            <svg class="iconClose">
               <use
                 href="../images/sprite.svg#close"
                 width="18"
@@ -126,10 +116,9 @@
             name="name"
             placeholder="Complete Name"
             type="text"
-
             requerid
-          /> 
-          <svg class="iconForm"> 
+          />
+          <svg class="iconForm">
             <use
               href="../images/sprite.svg#silhouetteblack"
               width="18"
@@ -137,7 +126,7 @@
             ></use>
           </svg>
         </label>
-        <label class="labelForm" for="phone"> 
+        <label class="labelForm" for="phone">
           Phone
           <input
             class="inputForm"
@@ -148,8 +137,8 @@
             type="tel"
             pattern="^[+]*[(]?[0-9]{1,4}[)]?[0-9-\s\.]+$"
             title="requerido"
-          /> 
-          <svg class="iconForm"> 
+          />
+          <svg class="iconForm">
             <use
               href="../images/sprite.svg#phoneblack"
               width="18"
@@ -157,7 +146,7 @@
             ></use>
           </svg>
         </label>
-        <label class="labelForm" for="email"> 
+        <label class="labelForm" for="email">
           E-mail
           <input
             class="inputForm"
@@ -166,8 +155,8 @@
             placeholder="Mail address"
             type="email"
             requerid
-          /> 
-          <svg class="iconForm"> 
+          />
+          <svg class="iconForm">
             <use
               href="../images/sprite.svg#emailblack"
               width="18"
@@ -175,7 +164,7 @@
             ></use>
           </svg>
         </label>
-        <label class="labelFormText" for="text"> 
+        <label class="labelFormText" for="text">
           Comment
           <input
             class="inputFormText"
@@ -184,127 +173,151 @@
             placeholder="Write something and maybe we read this."
             type="text"
             requerid
-          /> 
+          />
         </label>
-        
-        <label class="buttonFormCloseSend" for="button"> 
-          <input type="button" class="buttonSend" value="I want that!" /> 
+
+        <label class="buttonFormCloseSend" for="button">
+          <input type="button" class="buttonSend" value="I want that!" />
         </label>
       </form>
     </section>
-    <section>
-      <p>ice cream
-        made with
-        passion</p>
-    </section>
-    <img src="../images/slider-pic4 1.jpg" alt="hola1">
-    <img src="../images/slider-pic5 1.jpg" alt="hola2">
-    <img src="../images/slider-pic7 1.jpg" alt="hola3">
-    <p>Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable experience!</p>
-    <div>
-      <p>16</p>
-      <p>cafes</p>
-    </div>
-    <div>
-      <p>23</p>
-      <p>food trucks</p>
-    </div>
   </header>
   <body>
+    <section class="HeroContent">
+      <div class="hero container">
+        <div class="slogan">
+          <h2 class="slogan_text1">ICE CREAM MADE WITH</h2>
+          <h2 class="slogan_text2">PASSION</h2>
+        </div>
+
+        <label class="buttonFormHero1" for="button">
+          <input type="button" class="buttonHero1" value="Products" />
+        </label>
+        <label class="buttonFormHero2" for="button">
+          <input type="button" class="buttonHero2" value="How it's made?" />
+        </label>
+        <div></div>
+        <img src="../images/slider-pic5 1.jpg" alt="jar of milk" />
+      <p class="textHero">
+        Indulge in a scoop of ice cream made with passion and treat your taste
+        buds to an unforgettable experience!
+      </p>
+      <img src="../images/slider-pic7 1.jpg" alt="Icecream" />
+      <img src="../images/slider-pic4 1.jpg" alt="tasty" />
+
+      <div>
+        <h2 class="textBubbleTop">16</h2>
+        <h3 class="texBubbleButtom">cafes</h3>
+      </div>
+      <div>
+        <h2 class="textBubbleTop">23</h2>
+        <h3 class="texBubbleButtom">food trucks</h3>
+      </div>
+
+
+
+
+      </div>
+      
+      
+    </section>
+    
+    
+    
+    
+    
     <section class="products container"></section>
     <article class="about container"></article>
     <div class="advantages container"></div>
     <ul class="gallery container"></ul>
     <div class="customerReviews container"></div>
     <section class="contacts container">
-      <ul>
-        <li>
-          <div>
+      <ul class="ListsCardContacts">
+        
+          <li class="cardContacts">
             <div>
-              <h3>CAFE</h3>
-              <p>Chicago</p>
-              <p>Handcrafted coffee, baked goods, and premium ice cream.</p>
+              <h3 class="titleCard">CAFE</h3>
+              <h3 class="cardBold">Chicago</h3>
+              <p class="cardRegular">Handcrafted coffee, baked goods, and premium ice cream.</p>
             </div>
             <div>
-              <p>Monday - Friday</p>
-              <p>06:00AM - 10:00PM</p>
-              <p>Saturday - Sunday</p>
-              <p>08:00 AM - 16:00PM</p>
+              <h3 class="cardBold">Monday - Friday</h3>
+              <h3 class="timeZone">06:00AM - 10:00PM</h3>
+              <h3 class="cardBold">Saturday - Sunday</h3>
+              <h3 class="timeZone">08:00 AM - 16:00PM</h3>
             </div>
             <div>
-              <p>+61(0) 383 766 284</p>
-              <p>noreply@envato.com</p>
-            </div>
-            <div></div>
-          </div>
-          
-        </li>
-        <li>
-          <div>
-            <div>
-              <h3>FOOD TRUCK</h3>
-              <p>Los Angeles</p>
-              <p>Fusion cuisine and refreshing ice cream made with passion.</p>
-            </div>
-            <div>
-              <p>Monday - Friday</p>
-              <p>06:00AM - 10:00PM</p>
-              <p>Saturday - Sunday</p>
-              <p>08:00 AM - 16:00PM</p>
-            </div>
-            <div>
-              <p>+61(0) 383 766 284</p>
-              <p>noreply@envato.com</p>
+              <h3 class="cardRegular">+61(0) 383 766 284</h3>
+              <h3 class="cardRegular">noreply@envato.com</h3>
             </div>
             <div></div>
-          </div>
-          
-        </li>
-        <li>
-          <div>
+          </li>
+        
+        
+          <li class="cardContacts">
             <div>
-              <h3>CAFE</h3>
-              <p>New York</p>
-              <p>Specialty teas, artisanal pastries, mouth-watering ice cream.</p>
+              <h3 class="titleCard">FOOD TRUCK</h3>
+              <h class="cardBold">Los Angeles</h3>
+              <p class="cardRegular">Fusion cuisine and refreshing ice cream made with passion.</p>
             </div>
             <div>
-              <p>Monday - Friday</p>
-              <p>06:00AM - 10:00PM</p>
-              <p>Saturday - Sunday</p>
-              <p>08:00 AM - 16:00PM</p>
+              <h3 class="cardBold">Monday - Friday</h3>
+              <h3 class="timeZone">06:00AM - 10:00PM</h3>
+              <h3 class="cardBold">Saturday - Sunday</h3>
+              <h3 class="timeZone">08:00 AM - 16:00PM</h3>
             </div>
             <div>
-              <p>+61(0) 383 766 284</p>
-              <p>noreply@envato.com</p>
+              <h3 class="cardRegular">+61(0) 383 766 284</h3>
+              <h3 class="cardRegular">noreply@envato.com</h3>
             </div>
             <div></div>
-          </div>
-        </li>
-        <li>
-          <button class="buttonService" type="submit" data-modal-open> 
-            Buy now
-          </button>
-        </li>
-        <li>
-          <button class="buttonService" type="submit" data-modal-open> 
-            Buy now
-          </button>
-        </li>
+          </li>
+        
+        
+          <li class="cardContacts">
+            <div>
+              <h3 class="titleCard">CAFE</h3>
+              <h3 class="cardBold">New York</h3>
+              <p class="cardRegular">
+                Specialty teas, artisanal pastries, mouth-watering ice cream.
+              </p>
+            </div>
+            <div>
+              <h3 class="cardBold">Monday - Friday</h3>
+              <h3 class="timeZone">06:00AM - 10:00PM</h3>
+              <h3 class="cardBold">Saturday - Sunday</h3>
+              <h3 class="timeZone">08:00 AM - 16:00PM</h3>
+            </div>
+            <div>
+              <h3 class="cardRegular">+61(0) 383 766 284</h3>
+              <h3 class="cardRegular">noreply@envato.com</h3>
+            </div>
+            <div></div>
+          </li>
+        
       </ul>
+
+      <div>
+        <button class="b" type="submit" data-modal-open>
+          Buy now
+        </button>
+        <button class="b" type="submit" data-modal-open>
+          Buy now
+        </button>
+      </div>
+
     </section>
-  
+
     <footer class="footer container">
       <script src="../javascript/modal.js"></script>
-        <script
-            defer
-            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-            crossorigin="anonymous"
-          ></script>
-          <script defer src="../javascript/mobil-menu.js"></script>
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="../javascript/mobil-menu.js"></script>
     </footer>
   </body>
   <!--borrar kkkk-->
-
 </html>
-

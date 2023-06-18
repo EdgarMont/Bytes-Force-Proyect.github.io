@@ -1,10 +1,48 @@
 .hero {
     display: flex;
+    background-color: $color1;
     
     &_nav{
         display: flex;
     }
 }
+.HeroContent{
+  background-color: $color1;
+  height: 540px;
+}
+.slogan{
+  width: 277px;
+  
+
+  &_text1{
+    font-family: 'Titan One', cursive;
+    font-size: 38px;
+    font-weight: 400;
+    color: $color3;
+    
+  }
+  &_text2{
+    font-family: 'Titan One', cursive;
+    font-weight: 400;
+    font-size: 58px;
+    color: $color2;
+    
+  }
+}
+.textHero{
+  font-size: 15px;
+  color: $color3;
+}
+.textBubbleTop{
+  font-family: 'Titan One', cursive;
+  font-size: 46px;
+  color: $color2;
+}
+.texBubbleButtom{
+  font-size: 14px;
+  color: $color3;
+}
+//////
 .backdrop{
   position: fixed;
   top: 0;
@@ -151,36 +189,48 @@
   font-size: 12px;
   color: #757575;
 }
-.labelFormcheck{
+
+
+.buttonFormHero1{
+  display: block;
+}
+.buttonHero1{
+  background-color: $color2;
+  color: $color3;
+  font-size: 14px;
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: 10px;
-  left: 10px;
-  width: 448px;
+  align-items: center;
+  width: 107px;
   height: 40px;
-
+  justify-content: center;
+  border-radius: 20px;
 }
-.inputCheckbox{
-  height: auto;
-}
-.iconCheckbox{
-  height: 14px;
-  width: 14px;
-  border: solid 2px $color2;
-  border-radius: 4px;
-  margin-left: -14px;
-  margin-top: 17px;
-  margin-right: 10px;
+.buttonHero1:hover,
+.buttonHero1:focus{
   cursor: pointer;
-
-  @include flex-center;
+  background-color: #fd2465;
+  box-shadow: 0px 2px 5px rgba(133, 138, 143, 0.7);
 }
-.textCheckbox{
-  width: 400px;
-  line-height: 24px;
-
-  
+.buttonFormHero2{
+  width: 107px;
+}
+.buttonHero2{
+  background-color: $color3;
+  color: $color2;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 138px;
+  height: 40px;
+  justify-content: center;
+  border-radius: 20px;
+}
+.buttonHero2:hover,
+.buttonHero2:focus{
+  cursor: pointer;
+  background-color: #fd2465;
+  color: $color3;
+  box-shadow: 0px 2px 5px rgba(133, 138, 143, 0.7);
 }
 .buttonFormCloseSend{
   display: flex;
@@ -200,45 +250,9 @@
   height: 50px;
   border-radius: 5px;
 }
-.buttonSend:hover,
-.buttonSend:focus{
-  cursor: pointer;
-  background-color: #65b7fa;
-  box-shadow: 0px 2px 5px rgba(133, 138, 143, 0.7);
-}
 
-.buttonService {
-  background-color: #2196f3;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  width: auto;
-  letter-spacing: 0.06em;
-  width: 261px;
-  height: 50px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.buttonService:hover {
-  background-color: #65b7fa;
-  color: #ffffff;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.header {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 1px solid #ececec;
-  
-  }
-    
-  
+
+
   
   .menuNavIcon:hover,
   .menuNavIcon:focus {
@@ -247,7 +261,11 @@
   .nav {
     display: flex;
     padding-left: 73px;
-  
+
+    &_border{
+      border-bottom:1px solid #fff;
+    }
+
     &_site {
       font-size: 14px;
       font-weight: 500;
@@ -256,6 +274,7 @@
       text-decoration: none;
       color: $color2;
       padding-right: 50px;
+      
     }
     &_site:hover,
     &_site:focus {
@@ -263,6 +282,7 @@
       transition: 0.5s;
       cursor: pointer;
     }
+    
     &_current {
       font-size: 14px;
       font-weight: 500;
@@ -275,139 +295,12 @@
       padding-right: 50px;
     }
   }
-  .iconSend{
-
-    width: 6px;
-    height: 10px;
-    fill: $color4;
-  }
   
-  @media screen and (max-width: 768px) {
   
-  }
+  
   ////**//js nav-->
-  .navBlock{
-    position: absolute;
-    width: 95%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    margin-right: 15px;
-  }
+  /// 
+  ///   ////**//body-->
   
   
-  
-  
-  .menu .link {
-    padding: 10px;
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .menu .link:hover,
-  .menu .link:focus {
-    text-decoration: underline;
-  }
-  
-  .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-  }
-  
-  @media (min-width: 768px) {
-    .menu-toggle {
-      display: none;
-    }
-  }
-  
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-navBlock {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 32px;
-    background-color: #fff;
-    z-index: 9;
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
-  }
-  
-  .menu-navBlock.is-open {
-    transform: translateX(0);
-  }
-  
-  .menu-navBlock .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
-    
-  }
-  
-  .mobileMenu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  
-    &_link {
-      display: block;
-      padding: 10px;
-      color: $color2;
-      font-size: 40px;
-      font-weight: 500;
-      text-decoration: none;
-    }
-    &_link:hover{
-      color: $color1;
-    }
-  }
-  
-  .mobileMenu2 {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    width: 480px;
-    position: fixed;
-    bottom: 134px;
-  
-    &_link{
-      display: flex;
-      padding: 10px;
-      color: $color2;
-      font-size: 34px;
-      font-weight: 500;
-      text-decoration: none;
-    }
-  
-    &_link:hover{
-      color: $color1;
-    }
-    &_link2{
-      display: flex;
-      padding: 10px;
-      color: $color3;
-      font-size: 24px;
-      text-decoration: none;
-    }
-  
-    &_link2:hover{
-      color: $color1;
-    }
-  }
   
