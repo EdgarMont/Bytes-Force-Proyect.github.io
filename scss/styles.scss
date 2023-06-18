@@ -1,23 +1,22 @@
-@import "./Components/normalize";
-@import "./Utils/variables";
-@import "./Utils/mixin";
+@import './Components/normalize';
+@import './Utils/variables';
+@import './Utils/mixin';
 
-@import "./Components/heroHeader";
-@import "./Components/producst";
-@import "./Components/about";
-@import "./Components/advantages";
-@import "./Components/gallery";
-@import "./Components/customerReviews";
-@import "./Components/contacts";
-@import "./Components/footer";
+@import './Components/heroHeader';
+@import './Components/producst';
+@import './Components/about';
+@import './Components/advantages';
+@import './Components/gallery';
+@import './Components/customerReviews';
+@import './Components/contacts';
+@import './Components/footer';
 
 .container {
-min-width: 320px; 
-max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-    justify-content: space-evenly;
+  min-width: 320px;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 // .container {
 //     min-width: 320px;
