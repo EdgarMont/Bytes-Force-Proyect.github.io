@@ -1,3 +1,126 @@
 .contacts{
     display: flex;
 }
+.ListsCardContacts{
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+}
+.cardContacts{
+    height: 538px;
+    width: 368px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(133, 138, 143, 0.7);
+    margin: 15px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    width: 288px;
+    height: 210px;
+    border-bottom: 1px solid #e1e1e1;
+
+    &_title{
+        font-weight: 100;
+        font-size: 16px;
+        color: $color3;
+        background-color: $color7;
+        width: 75px;
+        height: 28px;
+        border-radius: 7px;
+        margin: 40px 146px 0px 0px;
+
+        @include flex-center;
+    }
+    &_title2{
+        font-weight: 100;
+        font-size: 16px;
+        color: $color3;
+        background-color: $color8;
+        width: 138px;
+        height: 28px;
+        border-radius: 7px;
+        margin: 40px 146px 0px 0px;
+
+        @include flex-center;
+    }
+    
+    &_Regular{
+        color: $color5;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+    }
+    &_Bold{
+        font-weight: 600;
+        font-size: 16px;
+        color: $color4;
+        letter-spacing: 0.6px;
+        line-height: 37px;
+    }
+
+}
+.card2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 288px;
+    height: 196px;
+    border-bottom: 1px solid #e1e1e1;
+
+    &_Bold{
+        font-weight: 600;
+        font-size: 16px;
+        color: $color4;
+        letter-spacing: 0.6px;
+        line-height: 37px;
+    }
+    &_timeZone{
+        color: $color6;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+.card3{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 21px auto;
+    width: 288px;
+    height: 50px;
+    
+
+    &_contact{
+        color: $color5;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+    }
+}
+
+.contactButtons{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+
+    &_locations{
+        width: 198px;
+        height: 44px;
+        background-color: $color2;
+        color: $color3;
+
+        @include flex-center;
+    }
+    &_franchise{
+        width: 168px;
+        height:44px;
+        background-color: $color3;
+        color: $color2;
+
+        @include flex-center;
+    }
+}
