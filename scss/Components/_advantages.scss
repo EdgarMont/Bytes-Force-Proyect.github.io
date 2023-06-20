@@ -1,3 +1,12 @@
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
 .advantages__section {
     background:  #FFF5F6;
 }
@@ -15,6 +24,7 @@
     &__icon {
         height: 50px;
         width: 50px;
+        animation: spin 2s linear infinite;
     }
     &__title { 
         color: #D41443;
