@@ -46,13 +46,15 @@
     width: 213px;
     height: 216px;
   }
+  &_text{
+    font-size: 14px;
+    color: $color3;
+    width: 190px;
+    height: 80px;
+  }
+  
 }
-.textHero{
-  font-size: 14px;
-  color: $color3;
-  width: 190px;
-  height: 80px;
-}
+
 .material-symbols-outlined{
   color: $color2;
   background-color: $color3;
@@ -80,6 +82,7 @@
   }
 }
 .heroRigth{
+  
   text-align: end;
   padding: 9px 33px 0px 0px;
   z-index: 1;
@@ -87,19 +90,38 @@
 .textBubble{
   justify-content: end;
   
+  &_Top{
+    padding-top: 22px;
+    font-family: 'Titan One', cursive;
+    font-size: 46px;
+    color: $color2;
+  }
+  &_Buttom{
+    font-size: 14px;
+    color: $color3;
+    font-weight: 100;
+  }
+  &-circle2{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: $color3;
+    border-radius: 100%;
+    margin-left: 273px;
+    margin-top: -77px;
+    margin-bottom: 77px;
+  }
+  &-circle3{
+    width: 30px;
+    height: 30px;
+    background-color: $color3;
+    border-radius: 100%;
+    margin-left: 273px;
+    margin-top: -77px;
+    margin-bottom: 77px;
+  }
 }
-.textBubbleTop{
-  padding-top: 22px;
-  font-family: 'Titan One', cursive;
-  font-size: 46px;
-  color: $color2;
 
-}
-.texBubbleButtom{
-  font-size: 14px;
-  color: $color3;
-  font-weight: 100;
-}
 .imageSoTasty{
   padding-top: 65px;
   justify-items: end;
@@ -260,56 +282,60 @@
   font-size: 12px;
   color: #757575;
 }
-.buttonHero{
+.formHero{
   display: flex;
   margin-bottom: 37px;
 }
 
-.buttonFormHero1{
+.formHero1{
   display: flex;
   flex-wrap: wrap;
   padding-right: 12px;
+
+  &_button{
+    background-color: $color2;
+    color: $color3;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 107px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  &_button:hover,
+  &_button:focus{
+    cursor: pointer;
+    background-color: #fd2465;
+    box-shadow: 0px 2px 5px rgba(133, 138, 143, 0.7);
+  }
 }
-.buttonHero1{
-  background-color: $color2;
-  color: $color3;
-  font-size: 14px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+
+.formHero2{
   width: 107px;
-  height: 40px;
-  justify-content: center;
-  border-radius: 20px;
+
+  &_button{
+    background-color: $color3;
+    color: $color2;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 141px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  &_button:hover,
+  &_button:focus{
+    cursor: pointer;
+    background-color: #fd2465;
+    color: $color3;
+    box-shadow: 0px 2px 5px rgba(133, 138, 143, 0.7);
+  }
 }
-.buttonHero1:hover,
-.buttonHero1:focus{
-  cursor: pointer;
-  background-color: #fd2465;
-  box-shadow: 0px 2px 5px rgba(133, 138, 143, 0.7);
-}
-.buttonFormHero2{
-  width: 107px;
-}
-.buttonHero2{
-  background-color: $color3;
-  color: $color2;
-  font-size: 14px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 138px;
-  height: 40px;
-  justify-content: center;
-  border-radius: 20px;
-}
-.buttonHero2:hover,
-.buttonHero2:focus{
-  cursor: pointer;
-  background-color: #fd2465;
-  color: $color3;
-  box-shadow: 0px 2px 5px rgba(133, 138, 143, 0.7);
-}
+
 .buttonFormCloseSend{
   display: flex;
   position: relative;
@@ -343,33 +369,135 @@
   border-radius: 100%;
   position: absolute;
 }
-.circle2{
-  display: flex;
-  width: 30px;
-  height: 30px;
-  background-color: $color3;
-  border-radius: 100%;
-  margin-left: 273px;
-  margin-top: -77px;
-  margin-bottom: 77px;
 
-}
-.circle3{
-  width: 30px;
-  height: 30px;
-  background-color: $color3;
-  border-radius: 100%;
-  margin-left: 273px;
-  margin-top: -77px;
-  margin-bottom: 77px;
-
-
-}
   
-  
-  ////**//js nav-->
+  ////
   /// 
-  ///   ////**//body-->
   
-  
-  
+@media (max-width: 1001px){
+  .slogan{
+    
+    &_text1{
+      font-size: 22.5px;
+      
+    }
+    &_text2{
+      font-family: 'Titan One', cursive;
+      line-height: 50px;
+      font-weight: 400;
+      font-size: 58px;
+      color: $color2;
+      margin-bottom: 17px;
+      
+    }
+  }
+  .formHero{
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .jarofMilk{
+    &_image{
+      width: 152px;
+      height: 154px;
+    }
+  }
+  .iceCreamCone{
+    box-sizing: border-box;
+    margin-left: 80px;
+
+    &_image{
+      width: 143px;
+      height: 336px;
+    }
+  }
+  .heroRigth{
+    padding: 9px 33px 0px 0px;
+
+  }
+  .imageSoTasty{
+    display: flex;
+    padding-top: 30px;
+    justify-content: end;
+
+    &_image{
+      width: 190px;
+      height: 150px;
+    }
+  }
+  .textBubble{
+    
+    &_Top{
+      padding-top: 7px;
+      font-size: 28px;
+    }
+    &-circle2{
+      width: 17px;
+      height: 17px;
+      margin-left: 180px;
+      margin-top: -56px;
+      margin-bottom: 56px;
+    }
+    &-circle3{
+      width: 17px;
+      height: 17px;
+      background-color: $color3;
+      border-radius: 100%;
+      margin-left: 180px;
+      margin-top: -56px;
+      margin-bottom: 56px;
+    }
+  }
+  .circle1{
+    top: 5%;
+    right: 25%;
+    width: 335px;
+    height:335px;
+  }
+}
+@media (max-width: 744px){
+  .jarofMilk{
+    display: none;
+  }
+  .heroRigth{
+    display: none;
+  }
+  .iceCreamCone{
+    width: 171px;
+    height: 410px;
+    position: absolute;
+    
+    &_image{
+      width: 171px;
+      height: 410px;
+    }
+  }
+  .slogan{
+    text-align: center;
+    margin: 140px 0px 0px;
+    width: 100%;
+    z-index: 2;
+
+
+    &_text2{
+      font-size: 48px;
+    }
+  }
+  .formHero{
+    width: 92%;
+    margin-bottom: 37px;
+
+    @include flex-center;
+  }
+  .circle1{
+    overflow: hidden;
+    top: 15%;
+    right: 0;
+    left: 10%;
+    width: 288px;
+    height:346px;
+  }
+  .HeroContent{
+    height: 410px;
+  }
+}
