@@ -8,12 +8,13 @@
 }
 .HeroContent{
   background-color: $color1;
-  height: 540px;
+
 }
 .slogan{
+  margin: 20px 0px 0px 17px;
   width: 277px;
+  z-index: 1;
   
-
   &_text1{
     font-family: 'Titan One', cursive;
     font-size: 38px;
@@ -23,24 +24,94 @@
   }
   &_text2{
     font-family: 'Titan One', cursive;
+    line-height: 50px;
     font-weight: 400;
     font-size: 58px;
     color: $color2;
+    margin-bottom: 25px;
     
   }
 }
+.jarofMilk{
+  display: flex;
+  flex-wrap: wrap;
+  width: 413px;
+  @include flex-center;
+
+  &_image{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../../images/jarOfMilk.png);
+    background-size: cover;
+    width: 213px;
+    height: 216px;
+  }
+}
 .textHero{
-  font-size: 15px;
+  font-size: 14px;
   color: $color3;
+  width: 190px;
+  height: 80px;
+}
+.material-symbols-outlined{
+  color: $color2;
+  background-color: $color3;
+  border-radius: 100%;
+  width: 26px;
+  margin-top: 20px;
+  
+  @include flex-center;
+}
+.iceCreamCone{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 600px;
+  flex-wrap: wrap;
+  z-index: 1;
+  
+  &_image{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../../images/iceCreamCone.png);
+    background-size: cover;
+    width: 236px;
+    height: 557px;
+  }
+}
+.heroRigth{
+  text-align: end;
+  padding: 9px 33px 0px 0px;
+  z-index: 1;
+}
+.textBubble{
+  justify-content: end;
+  
 }
 .textBubbleTop{
+  padding-top: 22px;
   font-family: 'Titan One', cursive;
   font-size: 46px;
   color: $color2;
+
 }
 .texBubbleButtom{
   font-size: 14px;
   color: $color3;
+  font-weight: 100;
+}
+.imageSoTasty{
+  padding-top: 65px;
+  justify-items: end;
+
+  &_image{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../../images/SoTastyPicture.png);
+    background-size: cover;
+    width: 304px;
+    height: 241px;
+  }
 }
 //////
 .backdrop{
@@ -189,16 +260,22 @@
   font-size: 12px;
   color: #757575;
 }
-
+.buttonHero{
+  display: flex;
+  margin-bottom: 37px;
+}
 
 .buttonFormHero1{
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 12px;
 }
 .buttonHero1{
   background-color: $color2;
   color: $color3;
   font-size: 14px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 107px;
   height: 40px;
@@ -219,6 +296,7 @@
   color: $color2;
   font-size: 14px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 138px;
   height: 40px;
@@ -250,52 +328,43 @@
   height: 50px;
   border-radius: 5px;
 }
-
-
-
   
-  .menuNavIcon:hover,
-  .menuNavIcon:focus {
-    fill: $color1;
-  }
-  .nav {
-    display: flex;
-    padding-left: 73px;
-
-    &_border{
-      border-bottom:1px solid #fff;
-    }
-
-    &_site {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: auto;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      color: $color2;
-      padding-right: 50px;
-      
-    }
-    &_site:hover,
-    &_site:focus {
-      color: $color1;
-      transition: 0.5s;
-      cursor: pointer;
-    }
-    
-    &_current {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: auto;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      color: $color1;
-      border-bottom: 5px solid $color1;
-      padding-bottom: 27px;
-      padding-right: 50px;
-    }
-  }
+.menuNavIcon:hover,
+.menuNavIcon:focus {
+  fill: $color1;
+}
   
+.circle1{
+  top: 5%;
+  right: 25%;
+  width: 534px;
+  height:534px;
+  background-color: $color6;
+  border-radius: 100%;
+  position: absolute;
+}
+.circle2{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: $color3;
+  border-radius: 100%;
+  margin-left: 273px;
+  margin-top: -77px;
+  margin-bottom: 77px;
+
+}
+.circle3{
+  width: 30px;
+  height: 30px;
+  background-color: $color3;
+  border-radius: 100%;
+  margin-left: 273px;
+  margin-top: -77px;
+  margin-bottom: 77px;
+
+
+}
   
   
   ////**//js nav-->

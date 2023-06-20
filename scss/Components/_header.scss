@@ -1,15 +1,13 @@
 .header{
     background-color: $color1;
     
-    
     &_nav{
-        
         display: flex;
         align-items: center;
         justify-content: center;
         width: 66%;
         height: 124px;
-        
+        z-index: 1;
 
         &_site{
             font-size: 16px;
@@ -17,9 +15,9 @@
             letter-spacing: 0.04em;
             color: $color3;
             padding: 0px 17px;
+            
         }
     }
-
 }
 .IceCream{
     font-family: 'Titan One', cursive;
@@ -28,6 +26,7 @@
     display: flex;
     align-items: center;
     padding: 0px 15px;
+    z-index: 1;
     
     &_icon{
         width: 50px;
