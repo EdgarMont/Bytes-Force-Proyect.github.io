@@ -1,6 +1,7 @@
 .contacts{
     font-family: 'DM Sans', sans-serif;
     max-width: 100%;
+    background-color: #FFF5F6;
 }
 .ListsCardContacts{
     display: flex;
@@ -129,6 +130,11 @@
 
         @include flex-center;
     }
+    &_Locations:hover,
+    &_locations:focus{
+        background-color: $color3;
+        color: $color2;
+    }
     &_franchise{
         width: 168px;
         height:44px;
@@ -137,6 +143,11 @@
         border-radius: 22px;
 
         @include flex-center;
+    }
+    &_franchise:hover,
+    &_franchise:focus{
+        background-color: $color2;
+        color: $color3;
     }
 }
 @media (max-width: 1001px){
@@ -247,7 +258,7 @@
         }
     }
     .contactButtons{
-        margin: 40px auto;
+        margin: 40px auto 0px auto;
         width: 100%;
         display: block;
 
@@ -257,7 +268,7 @@
         }
         &_franchise{
             width: 162px;
-            margin: 5px auto;
+            margin: 5px auto 0px auto;
         }
     }
 
