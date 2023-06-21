@@ -8,7 +8,7 @@
 }
 
 .advantages__section {
-    background:  #FFF5F6;
+    background:  $color8;
 }
 
 .advantages{
@@ -27,7 +27,7 @@
         animation: spin 2s linear infinite;
     }
     &__title { 
-        color: #D41443;
+        color: $color2;
         font-family: 'Titan One';
         font-weight: 400;
         font-size: 58px;
