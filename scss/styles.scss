@@ -3,6 +3,13 @@
 @import "./Utils/mixin";
 
 @import "./Components/heroHeader";
+
+@import "./Utils/extends";
+
+
+@import "./Components/header";
+@import "./Components/hero";
+
 @import "./Components/producst";
 @import "./Components/about";
 @import "./Components/advantages";
@@ -10,6 +17,8 @@
 @import "./Components/customerReviews";
 @import "./Components/contacts";
 @import "./Components/footer";
+
+
 
 .container {
     max-width: 100%;
