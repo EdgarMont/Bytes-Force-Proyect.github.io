@@ -1,3 +1,92 @@
 .customerReviews{
-    display: flex;
+    width: 100%;
+    &__picture {
+        width: 85px;
+        margin: 0 50%;
+    }
 }
+
+.circles {
+    @include flex-center;
+    margin-top:16px ;
+}
+
+.circle {
+    margin: 5px;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: $color2;
+}
+
+.home {
+    width: 12px;
+    height: 10px;
+}
+
+.circle--hover {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #D9D9D9;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.circle--hover:hover,
+.circle--hover:focus {
+        background-color: $color2;
+}
+
+
+.client-name{
+    text-align: center;
+    margin-top: 16px;
+}
+
+.home__options{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 60px;
+    gap: 18px;
+
+}
+.customerReviews-box {
+    background-color: #FAFAFA;
+    max-width: 968px;
+    height: 138px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.reviews-description {
+    line-height: 260%;
+
+}
+
+
+.client-1 {
+    line-height: 1.6rem;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid #E1E1E1;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 4%;
+    text-align: center;
+    
+}
+
+.customerReviews__client {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+
