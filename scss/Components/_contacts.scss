@@ -137,13 +137,14 @@
         background-color: $color2;
         color: $color3;
         border-radius: 22px;
+        margin-right: 12px;
 
         @include flex-center;
     }
     &_Locations:hover,
     &_locations:focus{
-        background-color: $color3;
-        color: $color2;
+        background-color: #fa517c;
+        color: $color3;
     }
     &_franchise{
         width: 168px;
@@ -160,6 +161,8 @@
         color: $color3;
     }
 }
+
+
 @media (max-width: 1001px){
     .card{
     
