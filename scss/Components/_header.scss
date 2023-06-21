@@ -17,6 +17,10 @@
             padding: 0px 17px;
             
         }
+        &_site:hover,
+        &_site:focus{
+          color: $color2;
+        }
     }
 }
 .IceCream{
@@ -37,31 +41,33 @@
 }
 
 .buttonModalBuy {
-    background-color: $color3;
-    color: $color2;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 0.06em;
-    width: 159px;
-    height: 44px;
-    border-radius: 22px;
-    margin: 40px 15px;
-    z-index: 2;
+  background-color: $color3;
+  color: $color2;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.06em;
+  width: 159px;
+  height: 44px;
+   border-radius: 22px;
+   margin: 40px 15px;
+  z-index: 2;
 
-    &_icon{
-        width: 6px;
-        height: 10px;
-        fill: $color4;
-        margin-left: 12px;
-      }
+  &_icon{
+      width: 6px;
+      height: 10px;
+      fill: $color4;
+      margin-left: 12px;
   }
-.buttonModalBuy:hover {
+}
+.buttonModalBuy:hover,
+.buttonModalBuy:focus{
   background-color: #fd2465;
   color: #ffffff;
   cursor: pointer;
-    
+  
 }
+
 .navBlock{
   position: absolute;
   width: 95%;

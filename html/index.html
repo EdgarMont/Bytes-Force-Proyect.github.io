@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../css/styles.min.css" />
     <title>IceCream</title>
   </head>
-  <header class="header">
+  <header class="header" id="home">
     <section class="hero container">
       <a class="IceCream" href="#">
         <svg class="IceCream_icon">
@@ -48,15 +48,15 @@
         </button>
       </div>
       <nav class="header_nav">
-        <a class="header_nav_site" href="#">Home</a>
+        <a class="header_nav_site" href="#home">Home</a>
 
-        <a class="header_nav_site" href="#">About us</a>
+        <a class="header_nav_site" href="#aboutUs">About us</a>
 
-        <a class="header_nav_site" href="#">How It's made?</a>
+        <a class="header_nav_site" href="#howItsMade">How It's made?</a>
 
-        <a class="header_nav_site" href="#">Our products</a>
+        <a class="header_nav_site" href="#ourProducts">Our products</a>
 
-        <a class="header_nav_site" href="#">Contact</a>
+        <a class="header_nav_site" href="#contact">Contact</a>
       </nav>
 
       <button class="buttonModalBuy" type="submit" data-modal-open>
@@ -88,11 +88,11 @@
           </svg>
         </button>
         <ul class="mobileMenu">
-          <li><a href="#" class="mobileMenu_link">Home</a></li>
-          <li><a href="#" class="mobileMenu_link">About us</a></li>
-          <li><a href="#" class="mobileMenu_link">How it's made?</a></li>
-          <li><a href="#" class="mobileMenu_link">Our products</a></li>
-          <li><a href="#" class="mobileMenu_link">Contact</a></li>
+          <li><a href="#home" class="mobileMenu_link">Home</a></li>
+          <li><a href="#aboutUs" class="mobileMenu_link">About us</a></li>
+          <li><a href="#howItsMade" class="mobileMenu_link">How it's made?</a></li>
+          <li><a href="#ourProducts" class="mobileMenu_link">Our products</a></li>
+          <li><a href="#contact" class="mobileMenu_link">Contact</a></li>
         </ul>
       </div>
     </section>
@@ -180,8 +180,8 @@
           />
         </label>
 
-        <label class="buttonFormCloseSend" for="button">
-          <input type="button" class="buttonSend" value="I want that!" />
+        <label class="formClose" for="button">
+          <input type="button" class="formClose_button" value="I want that!" />
         </label>
       </form>
     </section>
@@ -244,12 +244,18 @@
      
     </section>
 
-    <section class="products container"></section>
-    <article class="about container"></article>
-    <div class="advantages container"></div>
-    <ul class="gallery container"></ul>
-    <div class="customerReviews container"></div>
-
+    <section class="products container" id="ourProducts">
+    </section>
+    <article class="about container" id="aboutUs">
+    </article>
+    <div class="advantages container" id="howItsMade">
+    </div>
+    <ul class="gallery container">
+    </ul>
+    <div class="customerReviews container">
+    </div>
+    <div class="contacts container" id="contact">
+    </div>
     <footer class="footer container">
       <script src="../javascript/modal.js"></script>
       <script
