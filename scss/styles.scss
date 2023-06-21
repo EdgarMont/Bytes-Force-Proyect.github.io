@@ -4,7 +4,8 @@
 @import "./Utils/extends";
 
 
-@import "./Components/heroHeader";
+@import "./Components/header";
+@import "./Components/hero";
 @import "./Components/producst";
 @import "./Components/about";
 @import "./Components/advantages";
@@ -21,4 +22,3 @@
     margin-right: auto;
     box-sizing: border-box;
 }
-
