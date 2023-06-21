@@ -1,5 +1,6 @@
 .customerReviews{
     width: 100%;
+    overflow-x: auto;
     &__picture {
         width: 85px;
         margin: 0 50%;
