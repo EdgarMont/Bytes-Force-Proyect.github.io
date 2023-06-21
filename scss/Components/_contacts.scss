@@ -1,3 +1,4 @@
+
 .contacts{
     font-family: 'DM Sans', sans-serif;
     max-width: 100%;
@@ -137,7 +138,7 @@
         background-color: $color2;
         color: $color3;
         border-radius: 22px;
-        margin-right: 12px;
+
 
         @include flex-center;
     }
@@ -152,6 +153,7 @@
         background-color: $color3;
         color: $color2;
         border-radius: 22px;
+        margin-left: 12px;
 
         @include flex-center;
     }
@@ -161,7 +163,84 @@
         color: $color3;
     }
 }
-
+.backdrop.is-hidden2 {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+}
+.material-symbols-outlined{
+    color: $color2;
+    background-color: $color3;
+    border-radius: 100%;
+    width: 26px;
+    margin-top: 20px;
+    
+    @include flex-center;
+}
+.iconContact{
+    color: inherit;
+    background-color: inherit;
+    border-radius: initial;
+    width: initial;
+    margin-top: 0px;
+    display: initial;
+}
+.ContactForm{
+    height: 23px;
+    width: 448px;
+    &_title{
+        display: flex;
+        justify-content: center;
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        color: $color2;
+        width: 100%;
+    }
+}
+.labelFormContacts{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 40px;
+    margin: 9px 0px;
+    width: 448px;
+    height: 40px;
+    font-size: 12px;
+    color: $color4;
+}
+.modalForm {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: $color3;
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+    transform: translateY(0);
+    transition: transform .2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.modalForm.is-hidden {
+    transform: translateY(200px);
+}
+.buttonCloseContacts{
+    width: 30px;
+    height: 30px;
+    background-color: $color3;
+    border: 1px solid #ffd4d4dc;
+    border-radius: 100%;
+    
+    @include flex-center;
+}
+.buttonCloseContacts:hover .iconCloseContacts{
+    cursor: pointer;
+    fill: $color1;
+  }
+.buttonCloseContacts:focus .iconCloseContacts{
+    cursor: pointer;
+    fill: $color1;
+}
 
 @media (max-width: 1001px){
     .card{
@@ -240,6 +319,7 @@
         }
     }
 }
+
 @media (max-width: 534px){
     .cardContacts{
         margin: 10px auto;
