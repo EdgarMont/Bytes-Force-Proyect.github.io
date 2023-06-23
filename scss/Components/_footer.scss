@@ -13,7 +13,7 @@
 }
 
 @media (min-width: 720px) {
-    .footer__box {
+    .container {
         display: block; //cambio de posicion, esta si funciono
         justify-content: space-between;
         margin-bottom: 91px;
@@ -21,7 +21,7 @@
 }
 
 @media (min-width: 1200px) {
-    .footer__box {
+    .container {
         margin-bottom: 97px;
     }
 }
