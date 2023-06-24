@@ -1,3 +1,126 @@
 .about{
     display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 600px;
+    margin-top: 30px;
+    margin-right: 183px;
+    line-height: 176%;
+  }
+
+  &__text {
+    font-weight: 500;
+    padding-bottom: 32px;
+    width: 401px;
+    position: relative;
+  }
+
+  &__text--gray {
+    font-size: 14px;
+    color: #907e82;
+    width: 430px;
+    padding-bottom: 32px;
+  }
+
+  &__backgroundtwo {
+    background-image: url(../images/cow.png);
+    background-repeat: no-repeat;
+    height: 501px;
+    padding-top: 60px;
+    margin-left: 16px;
+    margin-right: 408px;
+  }
+
+  &__button {
+    width: 176px;
+    height: 44px;
+    background: #ffffff;
+    border-radius: 22px;
+    color: #d41443;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    &__background {
+      background-image: none;
+    }
+
+    &__backgroundtwo {
+      margin-top: -90px;
+      background-size: 336px 335px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    &__list {
+      position: absolute;
+      top: 201px;
+      margin-left: 350px;
+      margin-right: 34px;
+    }
+
+    &__text {
+      font-size: 14px;
+      width: 334px;
+    }
+
+    &__text--gray {
+      font-size: 14px;
+      width: 334px;
+    }
+
+    &__button {
+      position: absolute;
+      margin-left: 200px;
+      margin-top: 280px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    flex-direction: column;
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__ask {
+      font-size: 34;
+    }
+
+    &__backgroundtwo {
+      position: absolute;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 400px;
+      height: 400px;
+      padding: 20px;
+    }
+
+    &__list {
+      display: flex;
+      margin-left: 0;
+      top: 400px;
+    }
+
+    &__text {
+      margin-left: 0;
+      padding-bottom: 42px;
+      font-size: 12px;
+      width: 280px;
+    }
+
+    &__button {
+      left: 20px;
+      margin-top: 753px;
+      margin-left: 10px;
+    }
+  }
 }
