@@ -1,4 +1,4 @@
-  .container__background{
+  .gallery__background{
     background: linear-gradient($color9, $color3);
   }
   .gallery {
@@ -176,9 +176,11 @@
 @include screen-768 {
   .gallery {
     width: 768px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     grid-gap: 5px;
     .gallery__image-one {
-      margin-top: inherit;
+      margin-top: unset;
       margin-left: inherit;
       width: 210.55px;
     }
@@ -213,6 +215,7 @@
     .gallery__image-seven {
       margin-left: inherit;
       width: 104.62px;
+      height: 104.62px;
     }
 
     .gallery__image-eight {
