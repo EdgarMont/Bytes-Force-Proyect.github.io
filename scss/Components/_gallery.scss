@@ -1,13 +1,9 @@
-  .gallery__background{
-    background: linear-gradient($color9, $color3);
-    padding-top: 90px;
-    padding-bottom: 120px;
-    
-  }
-  .gallery {
+.gallery {
+  width: 1200px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: minmax(100px, auto);
+  background: linear-gradient(#fff5f6, #ffffff);
   border-radius: 20px;
 
   .gallery__image-one {
@@ -54,7 +50,6 @@
     margin-left: 5%;
     grid-column: 4;
     grid-row: 1;
-    height: 138px;
   }
 
   .gallery__image-eight {
@@ -111,64 +106,54 @@
     width: 480px;
     .gallery__image-one {
       width: 89.4px;
-      height: 89.4px;
     }
 
     .gallery__image-two {
       margin-top: 25%;
-      margin-left: 14px;
+      margin-left: 10px;
       width: 43.59px;
-      height: 43.59px;
     }
 
     .gallery__image-three {
       margin-top: 55%;
-      margin-left: 28px;
+      margin-left: 20px;
       width: 43.59px;
-      height: 43.59px;
     }
 
     .gallery__image-four {
       margin-top: 65%;
-      margin-left: 14px;
+      margin-left: 10px;
       width: 43.59px;
-      height: 43.59px;
     }
 
     .gallery__image-five {
       margin-top: 70%;
       width: 43.59px;
-      height: 43.59px;
     }
 
     .gallery__image-six {
       margin-top: 65%;
       width: 43.59px;
-      height: 43.59px;
     }
 
     .gallery__image-seven {
       width: 43.59px;
-      height: 43.59px;
     }
 
     .gallery__image-eight {
-      margin-left: -12px;
+      margin-left: -10px;
       width: 43.59px;
-      height: 43.59px;
     }
 
     .gallery__image-nine {
-      margin-left: -27px;
+      margin-left: -25px;
       width: 43.59px;
-      height: 43.59px;
     }
 
     .gallery__image-ten {
       margin-top: 55%;
-      margin-left: -12px;
+      margin-left: -10px;
       width: 43.59px;
-      height: 43.59px;
     }
   }
 }
@@ -176,11 +161,9 @@
 @include screen-768 {
   .gallery {
     width: 768px;
-    margin-top: 5%;
-    margin-bottom: 5%;
     grid-gap: 5px;
     .gallery__image-one {
-      margin-top: unset;
+      margin-top: inherit;
       margin-left: inherit;
       width: 210.55px;
     }
@@ -215,7 +198,6 @@
     .gallery__image-seven {
       margin-left: inherit;
       width: 104.62px;
-      height: 104.62px;
     }
 
     .gallery__image-eight {
