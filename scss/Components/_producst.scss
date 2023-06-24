@@ -48,7 +48,7 @@
       background-size: cover;
       width: 368px;
       height: 394px;
-      position: relative;
+      position: absolute;
       top: 195px;
     }
   }
@@ -82,7 +82,7 @@
     &_image {
       background-image: url(../../image/product2.png);
       background-size: cover;
-      position: relative;
+      position: absolute;
       width: 368px;
       height: 394px;
       top: 195px;
@@ -110,7 +110,7 @@
     &_image {
       background-image: url(../../image/product3.png);
       background-size: cover;
-      position: relative;
+      position: absolute;
       width: 368px;
       height: 394px;
       top: 195px;
