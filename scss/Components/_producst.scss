@@ -1,6 +1,4 @@
-.container {
-  width: 1200px;
-}
+
 
 .products {
   .description_title {
@@ -50,7 +48,7 @@
       background-size: cover;
       width: 368px;
       height: 394px;
-      position: absolute;
+      position: relative;
       top: 195px;
     }
   }
@@ -84,7 +82,7 @@
     &_image {
       background-image: url(../../image/product2.png);
       background-size: cover;
-      position: absolute;
+      position: relative;
       width: 368px;
       height: 394px;
       top: 195px;
@@ -112,7 +110,7 @@
     &_image {
       background-image: url(../../image/product3.png);
       background-size: cover;
-      position: absolute;
+      position: relative;
       width: 368px;
       height: 394px;
       top: 195px;

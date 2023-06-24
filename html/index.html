@@ -213,9 +213,11 @@
             </label>
           </div>
           <div class="jarofMilk">
-            <div class="jarofMilk_image">
+            <picture class="jarofMilk_image">
+              <source srcset="../images/jarOfMilk.png" media="(max-width: 10px)">
+              <source srcset="../images/jarOfMilk2.png" media="(max-width: 768px)">
               <img src="../images/jarOfMilk.png" alt="jar of milk">
-            </div>
+            </picture>
             <div class="jarofMilk_text">
               Indulge in a scoop of ice cream made with passion and treat your
               taste buds to an unforgettable experience!
@@ -251,7 +253,7 @@
       </div>
       <div class="circle1"></div>
     </section>
-    <section class="products container">
+    <section class="products container" id="ourProducts">
       <h3 class="description_title">100% natural</h3>
       <h2 class="title_products">products</h2>
 
@@ -320,7 +322,7 @@
         </li>
       </ul>
     </section>
-    <article class="about">
+    <article class="about" id="aboutUs">
       <h2 class="about__title">TRADITION AND LOVE</h2>
       <h1 class="about__ask">HOW IT’S MADE?</h1>
       <div class="about__background">
@@ -343,7 +345,7 @@
         </div>
       </div>
     </article>
-     <div class="advantages__section container">
+     <div class="advantages__section container" id="howItsMade">
       <ul class="advantages">
         <li class="advantages__list">
           <img class="advantages__icon" src="../Images/milkglass.png" alt="glass of milk"/>
@@ -490,7 +492,7 @@
     </div>
 
   </div>
-    <section class="contacts">
+    <section class="contacts" id="contact">
       <div class="container">
         <ul class="ListsCardContacts">
           <li class="cardContacts">
