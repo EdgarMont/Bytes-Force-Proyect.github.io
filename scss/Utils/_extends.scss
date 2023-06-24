@@ -1,0 +1,42 @@
+%decoration_title {
+    margin-top: 165px;
+    font-size: 30px;
+    font-family: "Titan One";
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color3;
+}
+
+%decoration_text {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding-top: 70px;
+    color: $color3;
+    width: 304px;
+    height: 134px;
+    padding-left: 32px;
+}
+%decoration_points {
+    position: relative;
+    width: 24.84px;
+    height: 6px;
+    left: 168px;
+    bottom: 110px;
+}
+
+%btn_product {
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+    background: $color3;
+    width: 40px;
+    height: 40px;
+    top: 95px;
+    left: 46%;
+}
