@@ -98,7 +98,7 @@
     }
 
     &__list {
-      position: absolute;
+      position: relative;
       top: 201px;
       margin-left: 350px;
       margin-right: 34px;
@@ -115,7 +115,7 @@
     }
 
     &__button {
-      position: absolute;
+      position: relative;
       margin-left: 200px;
       margin-top: 280px;
     }
@@ -135,7 +135,7 @@
     }
 
     &__backgroundtwo {
-      position: absolute;
+      position: relative;
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
