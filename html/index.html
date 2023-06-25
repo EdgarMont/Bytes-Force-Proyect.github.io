@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,52 +24,21 @@
   <article class="about container"></article>
   <div class="advantages container"></div>
   <ul class="gallery container"></ul>
+  <!-----------------CUSTOMER__REVIEWS---------------------->
 
+        <picture class="gallery__image-nine">
+          <source
+            srcset="../images/image9.jpg 1x, ../images/image9@2X.jpg 2x"
+          />
+          <img class="gallery__image-nine" src="../images/image9.jpg" alt="image9" width="138" />
+        </picture>
 
+  <div class="customerReviews container">
 
-
-
-  <div class="customerReviews" id="reviews">
-
-    <div class="container">
-
-      <div id="slider" >
-          <input type="radio" name="slider" id="slide1" checked class="swiper-pagination-bullet"></input><!--aqui va el checked-->
-          <input type="radio" name="slider" id="slide2"    class="swiper-pagination-bullet"></input>
-          <input type="radio" name="slider" id="slide3"    class="swiper-pagination-bullet"></input>
-
-
-
-<div id="slides">
-  <div id="overflow" class="swiper ">
-      <div class="swiper-wrapper">
-              <div class="slide   swiper-wrapper-conten-1">
-                  <div class="swiper-slide">
-                      <div class="swiper-slide__photo">
-                          <picture>
-                              <source srcset="../images/costumers-reviwers/desk-testimonials.jpg 1x, 
-                              ../images/costumers-reviwers/desk-testimonials.jpg 2x " media="(min-width: 50px)" />
-                              <img src="../images/costumers-reviwers/desk-testimonials.jpg" alt="emily" width="85"
-                                  height="85" />
-                          </picture>
-                      </div>
-                      <div class="swiper-slide__post">
-                          <svg class="swiper-slide__icon">
-                              <use href="../images/costumers-reviwers/sprite.svg#icon-double-quotes"></use>
-                          </svg>
-                          <div class="swiper-slide__gradient">
-                              <p class="swiper-slide__text">
-                                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-                                  hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-                              </p>
-                          </div>
-                      </div>
-  
-                      </div>
-                      <div class="swiper-slide__conten-name ">
-                      <h3 class="swiper-slide__name ">Emily, Los Angeles</h3>
-                  </div>
-              </div>
+    <div class="customerReviews__client" >
+      <img class="customerReviews__picture" src="../images/testimonials-1.png" alt="">
+      <img class="customerReviews__picture" src="../images/testimonials1 3.png" alt="">
+      <img class="customerReviews__picture" src="../images/testimonials1 4.png" alt="">
 
               <div class="slide  swiper-wrapper-conten-2">
                   <div class="swiper-slide">
@@ -148,7 +116,8 @@
       
   </div>
 
-</div>
+  </div>
+
 
 
 
@@ -157,3 +126,4 @@
 <footer class="footer container"></footer>
 
 </html>
+
