@@ -25,44 +25,129 @@
   <article class="about container"></article>
   <div class="advantages container"></div>
   <ul class="gallery container"></ul>
-  <!-----------------CUSTOMER__REVIEWS---------------------->
+
+
 
 
 
   <div class="customerReviews" id="reviews">
 
     <div class="container">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="swiper-slide__photo">
-                        <picture>
-                            <source srcset="../images/costumers-reviwers/desk-testimonials.jpg 1x, 
-                            ../images/costumers-reviwers/desk-testimonials.jpg 2x "
-                    media="(min-width: 50px)" />
-                            <img src="../images/costumers-reviwers/desk-testimonials.jpg" alt="emily" width="85" height="85" />
-                        </picture>
-                    </div>
-                    <div class="swiper-slide__post">
-                        <div class="swiper-slide__gradient">
-                            <p class="swiper-slide__text">
-                                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-                                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-                            </p>
-                        </div>
-                    </div>
-                    <h3 class="swiper-slide__name list">Emily, Los Angeles</h3>
-                </div>
 
-            </div>
+      <div id="slider" >
+          <input type="radio" name="slider" id="slide1" checked class="swiper-pagination-bullet"></input><!--aqui va el checked-->
+          <input type="radio" name="slider" id="slide2"    class="swiper-pagination-bullet"></input>
+          <input type="radio" name="slider" id="slide3"    class="swiper-pagination-bullet"></input>
 
-            <div class="swiper-pagination">
-                <span class="swiper-pagination-bullet"></span>
-                <span class="swiper-pagination-bullet"></span>
-                <span class="swiper-pagination-bullet"></span>
-            </div>
-        </div>
-    </div>
+
+
+<div id="slides">
+  <div id="overflow" class="swiper ">
+      <div class="swiper-wrapper">
+              <div class="slide   swiper-wrapper-conten-1">
+                  <div class="swiper-slide">
+                      <div class="swiper-slide__photo">
+                          <picture>
+                              <source srcset="../images/costumers-reviwers/desk-testimonials.jpg 1x, 
+                              ../images/costumers-reviwers/desk-testimonials.jpg 2x " media="(min-width: 50px)" />
+                              <img src="../images/costumers-reviwers/desk-testimonials.jpg" alt="emily" width="85"
+                                  height="85" />
+                          </picture>
+                      </div>
+                      <div class="swiper-slide__post">
+                          <svg class="swiper-slide__icon">
+                              <use href="../images/costumers-reviwers/sprite.svg#icon-double-quotes"></use>
+                          </svg>
+                          <div class="swiper-slide__gradient">
+                              <p class="swiper-slide__text">
+                                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                                  hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                              </p>
+                          </div>
+                      </div>
+  
+                      </div>
+                      <div class="swiper-slide__conten-name ">
+                      <h3 class="swiper-slide__name ">Emily, Los Angeles</h3>
+                  </div>
+              </div>
+
+              <div class="slide  swiper-wrapper-conten-2">
+                  <div class="swiper-slide">
+                      <div class="swiper-slide__photo">
+                          <picture>
+                              <source srcset="../images/costumers-reviwers/testimonials1 3.png 1x, 
+                              ../images/costumers-reviwers/testimonials1 3.png 2x " media="(min-width: 50px)" />
+                              <img src="../images/costumers-reviwers/testimonials1 3.png" alt="emily" width="85"
+                                  height="85" />
+                          </picture>
+                      </div>
+                      <div class="swiper-slide__post">
+                          <svg class="swiper-slide__icon">
+                              <use href="../images/costumers-reviwers/sprite.svg#icon-double-quotes"></use>
+                          </svg>
+                          <div class="swiper-slide__gradient">
+                              <p class="swiper-slide__text">
+                                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                                  hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                              </p>
+                          </div>
+                      </div>
+  
+                      </div>
+                      <div class="swiper-slide__conten-name ">
+                      <h3 class="swiper-slide__name ">Emily, Los Angeles</h3>
+                  </div>
+              </div>
+
+              <div class="slide  swiper-wrapper-conten-3">
+                  <div class="swiper-slide">
+                      <div class="swiper-slide__photo">
+                          <picture>
+                              <source srcset="../images/costumers-reviwers/testimonials1 4.png 1x, 
+                              ../images/costumers-reviwers/testimonials1 4.png 2x " media="(min-width: 50px)" />
+                              <img src="../images/costumers-reviwers/testimonials1 4.png" alt="emily" width="85"
+                                  height="85" />
+                          </picture>
+                      </div>
+                      <div class="swiper-slide__post">
+                          <svg class="swiper-slide__icon">
+                              <use href="../images/costumers-reviwers/sprite.svg#icon-double-quotes"></use>
+                          </svg>
+                          <div class="swiper-slide__gradient">
+                              <p class="swiper-slide__text">
+                                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                                  hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                              </p>
+                          </div>
+                      </div>
+  
+                      </div>
+                      <div class="swiper-slide__conten-name ">
+                      <h3 class="swiper-slide__name ">Emily, Los Angeles</h3>
+                  </div>
+              </div>
+      </div>
+  </div>
+</div>
+      </div>
+
+      <div id="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+
+      </div>
+      <div id="bullets">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+
+      </div>
+
+      
+  </div>
+
 </div>
 
 
