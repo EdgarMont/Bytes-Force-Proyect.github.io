@@ -8,8 +8,33 @@
 @media (min-width: 1200px) {
     .footer {
         padding-top: 82px;
-
+        margin-bottom: 97px;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        &__name {
+            width: 472px;
+            font-size: 30px;
+            line-height: calc(34 / 30);
+        }
     }
+    
+    .footer__name-bottom {
+        font-size: 58px;
+        line-height: calc(66 / 58);
+        width: 100%;
+    }
+    .footer__social-list {
+        margin-bottom: 50px;
+    }
+    .footer__phone {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
+    .footer__bottom-text {
+        padding-top: 9px;
+        padding-bottom: 10px;
+    }
+    
 }
 
 @media (min-width: 720px) {
@@ -17,12 +42,6 @@
         display: block; //cambio de posicion, esta si funciono
         justify-content: space-between;
         margin-bottom: 91px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .footer__box {
-        margin-bottom: 97px;
     }
 }
 
@@ -44,14 +63,6 @@
         font-size: 26px;
         line-height: calc(30/26);
         margin: 0;
-    }
-}
-
-@media (min-width: 1200px) {
-    .footer__name {
-        width: 472px;
-        font-size: 30px;
-        line-height: calc(34 / 30);
     }
 }
 
@@ -82,13 +93,6 @@
     }
 }
 
-@media (min-width: 1200px) {
-    .footer__name-bottom {
-        font-size: 58px;
-        line-height: calc(66 / 58);
-        width: 100%;
-    }
-}
 
 /*--------------------SOCIAL__LIST---------------------*/
 
@@ -99,12 +103,6 @@
     margin-bottom: 46px;
     gap: 33px;
 
-}
-
-@media (min-width: 1200px) {
-    .footer__social-list {
-        margin-bottom: 50px;
-    }
 }
 
 .footer-icon {
@@ -209,12 +207,7 @@
     }
 }
 
-@media (min-width: 1200px) {
-    .footer__phone {
-        font-size: 16px;
-        letter-spacing: 0.02em;
-    }
-}
+
 
 
 
@@ -223,12 +216,7 @@
         font-size: 14px;
     }
 }
-@media (min-width: 1200px) {
-    .footer {
-        font-size: 16px;
-        letter-spacing: 0.02em;
-    }
-}
+
 
 .footer__phone:hover,
 .footer__phone:focus {
@@ -273,26 +261,4 @@
     }
 }
 
-@media (max-width: 1200px) {
-    .footer__bottom-text {
-        padding-top: 9px;
-        padding-bottom: 10px;
-    }
-}
 
-
-
-
-/* 
-@media  (min-width: 1200px){
-    .footer{
-}
-}
-
-
-@media  (min-width: 420px){
-    .footer{
-
-}
-}
-*/

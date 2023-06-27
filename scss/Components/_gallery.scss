@@ -1,3 +1,240 @@
-.gallery{
-    display: grid;
-}
+ .gallery__background {
+   background: linear-gradient($color9, $color3);
+   padding-top: 90px;
+   padding-bottom: 120px;
+
+ }
+
+ .gallery {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-auto-rows: minmax(100px, auto);
+   border-radius: 20px;
+
+   .gallery__image-one {
+     grid-column: 3;
+     grid-row: 1;
+   }
+
+   .gallery__image-two {
+     margin-top: 25%;
+     margin-left: 10%;
+     grid-column: 2;
+     grid-row: 1;
+   }
+
+   .gallery__image-three {
+     margin-top: 50%;
+     margin-left: 20%;
+     grid-column: 1;
+     grid-row: 1;
+   }
+
+   .gallery__image-four {
+     margin-top: 66%;
+     margin-left: 10%;
+     grid-column: 2;
+     grid-row: 1;
+   }
+
+   .gallery__image-five {
+     margin-top: 51%;
+     grid-column: 3;
+     grid-row: 1;
+   }
+
+   .gallery__image-six {
+     margin-top: 66%;
+     margin-left: 5%;
+     grid-column: 4;
+     grid-row: 1;
+   }
+
+   .gallery__image-seven {
+     margin-top: 25%;
+     margin-left: 5%;
+     grid-column: 4;
+     grid-row: 1;
+     height: 138px;
+   }
+
+   .gallery__image-eight {
+     margin-top: 15%;
+     grid-column: 5;
+     grid-row: 1;
+   }
+
+   .gallery__image-nine {
+     margin-top: 50%;
+     margin-left: -10%;
+     grid-column: 6;
+     grid-row: 1;
+   }
+
+   .gallery__image-ten {
+     margin-top: 55%;
+     grid-column: 5;
+     grid-row: 1;
+   }
+
+   .gallery__image-one,
+   .gallery__image-two,
+   .gallery__image-three,
+   .gallery__image-four,
+   .gallery__image-five,
+   .gallery__image-six,
+   .gallery__image-seven,
+   .gallery__image-eight,
+   .gallery__image-nine,
+   .gallery__image-ten {
+     transition: transform 0.2s;
+   }
+
+   .gallery__image-two:hover,
+   .gallery__image-three:hover,
+   .gallery__image-four:hover,
+   .gallery__image-five:hover,
+   .gallery__image-six:hover,
+   .gallery__image-seven:hover,
+   .gallery__image-eight:hover,
+   .gallery__image-nine:hover,
+   .gallery__image-ten:hover {
+     transform: scale(1.2);
+   }
+
+   .gallery__image-one:hover {
+     transform: scale(1.2);
+   }
+ }
+
+ @include screen-480 {
+   .gallery {
+     width: 480px;
+
+     .gallery__image-one {
+       width: 89.4px;
+       height: 89.4px;
+     }
+
+     .gallery__image-two {
+       margin-top: 25%;
+       margin-left: 14px;
+       width: 43.59px;
+       height: 43.59px;
+     }
+
+     .gallery__image-three {
+       margin-top: 55%;
+       margin-left: 28px;
+       width: 43.59px;
+       height: 43.59px;
+     }
+
+     .gallery__image-four {
+       margin-top: 65%;
+       margin-left: 14px;
+       width: 43.59px;
+       height: 43.59px;
+     }
+
+     .gallery__image-five {
+       margin-top: 70%;
+       width: 43.59px;
+       height: 43.59px;
+     }
+
+     .gallery__image-six {
+       margin-top: 65%;
+       width: 43.59px;
+       height: 43.59px;
+     }
+
+     .gallery__image-seven {
+       width: 43.59px;
+       height: 43.59px;
+     }
+
+     .gallery__image-eight {
+       margin-left: -12px;
+       width: 43.59px;
+       height: 43.59px;
+     }
+
+     .gallery__image-nine {
+       margin-left: -27px;
+       width: 43.59px;
+       height: 43.59px;
+     }
+
+     .gallery__image-ten {
+       margin-top: 55%;
+       margin-left: -12px;
+       width: 43.59px;
+       height: 43.59px;
+     }
+   }
+ }
+
+ @include screen-768 {
+   .gallery {
+     width: 768px;
+     margin-top: 5%;
+     margin-bottom: 5%;
+     grid-gap: 5px;
+
+     .gallery__image-one {
+       margin-top: unset;
+       margin-left: inherit;
+       width: 210.55px;
+     }
+
+     .gallery__image-two {
+       margin-left: inherit;
+       width: 104.62px;
+     }
+
+     .gallery__image-three {
+       margin-left: inherit;
+       width: 104.62px;
+     }
+
+     .gallery__image-four {
+       margin-top: 75%;
+       margin-left: inherit;
+       width: 104.62px;
+     }
+
+     .gallery__image-five {
+       margin-top: 70%;
+       width: 104.62px;
+     }
+
+     .gallery__image-six {
+       margin-top: 75%;
+       margin-left: inherit;
+       width: 104.62px;
+     }
+
+     .gallery__image-seven {
+       margin-left: inherit;
+       width: 104.62px;
+       height: 104.62px;
+     }
+
+     .gallery__image-eight {
+       margin-left: inherit;
+       width: 104.62px;
+     }
+
+     .gallery__image-nine {
+       margin-left: inherit;
+       width: 104.62px;
+     }
+
+     .gallery__image-ten {
+       margin-top: 65%;
+       margin-left: inherit;
+       width: 104.62px;
+     }
+   }
+ }
