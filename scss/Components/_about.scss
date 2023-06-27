@@ -35,7 +35,9 @@
     margin-top: 60px;
     background-image: url(../images/milk.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+
   }
 
   &__list {
@@ -69,6 +71,7 @@
     padding-top: 60px;
     margin-left: 16px;
     margin-right: 408px;
+
   }
 
   &__button {
@@ -80,7 +83,7 @@
     font-weight: 700;
     text-align: center;
     margin-top: 40px;
-    margin-left: 600px;
+    margin-left: 200px;
   }
 }
 
@@ -116,7 +119,7 @@
 
     &__button {
       position: absolute;
-      margin-left: 200px;
+      margin-left: 0;
       margin-top: 280px;
     }
   }
@@ -136,7 +139,7 @@
 
     &__backgroundtwo {
       position: absolute;
-      background-size: contain;
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       width: 400px;
